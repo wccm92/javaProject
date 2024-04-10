@@ -1,0 +1,15 @@
+double tasaInteresMensual;
+    public CuentaDeAhorros(int numero, double saldo, double tasaInteresMensual) {
+        super(numero, saldo);
+        this.tasaInteresMensual = tasaInteresMensual;
+    }
+
+    public double getTasaInteresMensual() {
+        return tasaInteresMensual;
+    }
+
+    public void setTasaInteresMensual(double tasaInteresMensual) {
+        this.tasaInteresMensual = tasaInteresMensual;
+    }
+
+    public double calcularIntereses(){ return getTasaInteresMensual() * this.tasaInteresMensual; }
