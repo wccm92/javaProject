@@ -1,0 +1,22 @@
+double costoManejoMensual;
+    public CuentaDeCheques(int numero, double saldo, double costoManejoMensual) {
+        super(numero, saldo);
+        this.costoManejoMensual = costoManejoMensual;
+    }
+
+    public double getCostoManejoMensual() {
+        return costoManejoMensual;
+    }
+
+    public void setCostoManejoMensual(double costoManejoMensual) {
+        this.costoManejoMensual = costoManejoMensual;
+    }
+
+    @Override
+    public String toString() {
+        return "CuentaDeCheques{" +
+                "costoManejoMensual=" + costoManejoMensual +
+                '}';
+    }
+
+    public double calcularIntereses(){ return getCostoManejoMensual() * this.costoManejoMensual; }
